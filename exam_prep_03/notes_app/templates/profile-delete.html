@@ -2,19 +2,20 @@
 {% block content %}
     <div class="body">
         <!--headings-->
-        <h1>Edit Note</h1>
+        <h1>Delete Profile</h1>
         <!--headings-->
 
-        <!--note edit data form-->
+
         <div class="form">
-            <form method="POST" action="{% url 'edit note' note.pk %}">
+            <form method="POST">
+
                 {{ form }}
                 {% csrf_token %}
 
-                <input type="submit" value="Edit"/>
+                <input type="submit" value="Delete"/>
             </form>
         </div>
-        <!--end note edit data form-->
+
     </div>
 
 {% endblock %}
